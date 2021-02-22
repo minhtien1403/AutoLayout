@@ -70,21 +70,7 @@ class ViewController: UIViewController {
         if(sender.tag == 14){
             calc.operation = .divide
         }
-        
-//        if let value = Double(resultLabel.text!) {
-//             if calc.firstNumber == nil {
-//                 calc.firstNumber = value
-//             }
-//             else{
-//                calc.secondeNumber = value
-//                resultLabel.text! = "\(calc.result!)"
-//                calc.firstNumber = calc.result
-//                calc.secondeNumber = nil
-//             }
-//         }
     }
-    
-    
     
     @IBAction func equalPress(_ sender: Any) {
         
@@ -95,8 +81,6 @@ class ViewController: UIViewController {
         resultLabel.text = "\(calc.result!)"
         calc.reset()
     }
-    
-    
     
     @IBAction func clearAll(_ sender: Any) {
         resultLabel.text = "0"
